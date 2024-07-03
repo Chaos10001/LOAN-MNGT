@@ -65,3 +65,7 @@ div {
 .zoom:hover{
       transform: scale(1.1);
 }
+.loanbanks img {
+  height: 6rem;
+  width: 6rem;
+}
