@@ -6,6 +6,7 @@
 body {
   width: 100%;
   position: relative;
+  font-family: 'sans-serif';
 }
 nav {
   position: fixed;
@@ -68,4 +69,7 @@ div {
 .loanbanks img {
   height: 6rem;
   width: 6rem;
+}
+.displayscreen {
+  padding-left: 20rem;
 }
