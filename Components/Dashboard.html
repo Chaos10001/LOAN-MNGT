@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="headernav navbar navbar-light sticky-top bg-light px-4">
+      <div>
+        <h1>LOAN APP</h1>
+      </div>
+      <div>
+        <p>icon</p>
+      </div>
+    </nav>
+    <!-- where all contents in the dashboard are viewed -->
+    <div class="maincontent container-fluid">
+      <!-- left handside of the dashboard containing all clickable options to be viewed  -->
+      <div class="dashboardoptions pt-5 px-3">
+        <div class="w-100">
+          <button class="px-3 py-1 rounded-pill btn-outline-primary">
+            <i class="bi bi-house-door"></i> Dashboard
+          </button>
+        </div>
+        <div class="accordion" id="accordionExample">
+                  <!-- Customers -->
+          <div class="accordion-item my-4">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                Customers
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div><i class="bi bi-people pe-3"></i> Borrowers</div>
+              </div>
+            </div>
+          </div>
+          <!-- Loan Agreement -->
+          <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+                aria-controls="collapseTwo"
+              >
+                Loan Agreement Forms
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordiTwoxample"
+            >
+              <div class="accordion-body">
+                <div class="pb-2">
+                  <i class="bi bi-coin pe-2"></i> Loan Types
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-file-earmark-fill pe-2"></i>Loan Agreement
+                  Forms
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-files pe-2"></i>Loan Settlement Forms
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wallets  -->
+          <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+                aria-controls="collapseThree"
+              >
+                Wallets
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="pb-2"><i class="bi bi-wallet pe-2"></i>Wallets</div>
+                <div class="pb-2">
+                  <i class="bi bi-wallet pe-2"></i>Transfers
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-cash pe-2"></i>Transactions
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Loans -->
+          <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="true"
+                aria-controls="collapseFour"
+              >
+                Loans
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="pb-2">
+                  <i class="bi bi-currency-dollar pe-2"></i>Loans
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-clock-fill pe-2"></i>Pending Loans
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-stack pe-2"></i>Active Loans
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-x-octagon-fill pe-2"></i>Denied Loans
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-circle-half pe-2"></i>Partially Paid Loans
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-square-fill pe-2"></i>Fully Paid Loans
+                </div>
+                <div class="pb-2">
+                  <i class="bi bi-exclamation-triangle-fill pe-2"></i>Defaulted
+                  Loans
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Expenses -->
+          <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="true"
+                aria-controls="collapseFive"
+              >
+                Expenses
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="pb-2">
+                  <i class="bi bi-cash pe-2"></i>Expense Categories
+                </div>
+                <div><i class="bi bi-file-earmark-fill pe-2"></i>Expenses</div>
+              </div>
+            </div>
+          </div>
+          <!-- Repayments -->
+          <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="true"
+                aria-controls="collapseSix"
+              >
+                Repayments
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div><i class="bi bi-currency-dollar pe-2"></i>Repayments</div>
+              </div>
+            </div>
+          </div>
+          <!-- Addons -->
+          <div class="accordion-item mb-4">
+            <h2 class="accordion-header" id="headingSeven">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="true"
+                aria-controls="collapseSeven"
+              >
+                Addons
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingSeven"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div><i class="bi bi-plus-lg pe-2"></i>Third Parties</div>
+              </div>
+            </div>
+          </div>
+          <!-- UserManagement -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="true"
+                aria-controls="collapseEight"
+              >
+                User Management
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingEight"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <div class="pb-2">
+                  <i class="bi bi-shield-check pe-2"></i>Roles
+                </div>
+                <div><i class="bi bi-person pe-2"></i>Manage Users</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main content display side  -->
+      <div class="maincontentview pt-5 px-5">
+        <div
+          class="DashboardHeader d-flex flex-row justify-content-between align-items-center py-3 px-2"
+        >
+          <h1 class="displayrow">DASHBOARD</h1>
+          <div>
+            <button class="px-3 py-1 rounded-pill btn-outline-primary">
+              <i class="bi bi-funnel-fill pe-1"></i>
+              Filter
+            </button>
+          </div>
+        </div>
+        <div class="row displayrow">
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Active Loans</h5>
+                <h1 class="card-text">1</h1>
+                <a href="#" class="card-link">Active Loans</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Pending Loans</h5>
+                <h1 class="card-text">0</h1>
+                <a href="#" class="card-link">Pending Loans</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Defaulted Loans</h5>
+                <h1 class="card-text">0</h1>
+                <a href="#" class="card-link">Defaulted Loans</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Fully paid Loans</h5>
+                <h1 class="card-text">0</h1>
+                <a href="#" class="card-link">Fully paid Loans</a>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Funds Disbursed</h5>
+                <img src="../images/FundsDisbursed.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Total Collected</h5>
+                <img src="../images/TotalCollected.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Business Expenses</h5>
+                <img src="../images/BusinessExpenses.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card" style="width: 24rem">
+              <div class="card-body">
+                <h5 class="card-title">Outstanding Balance</h5>
+                <img src="../images/OutstandingBalance.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
