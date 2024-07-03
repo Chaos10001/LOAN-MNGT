@@ -59,9 +59,9 @@ img {
 div {
     cursor: pointer;
 }
-.col {
+.zoom {
     transition: transform .2s;
 }
-.col:hover{
+.zoom:hover{
       transform: scale(1.1);
 }
